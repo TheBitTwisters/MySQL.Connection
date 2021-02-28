@@ -11,6 +11,7 @@ namespace MySql.Connection
             get 
             {
                 var csb = new MySqlConnectionStringBuilder();
+                csb.SslMode = MySqlSslMode.None;
                 csb.UserID = UserID;
                 csb.Password = Password;
                 csb.Server = Server;
